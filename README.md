@@ -25,3 +25,26 @@ with in-stay issues in 55.9% of their reviews, versus 8.55 for leisure couples.
 1-night stays to 81.2% on 8+ night stays, with score dropping alongside it.
 5. Complaints have been rising, not falling, across the two-year window this data
 covers — both in-stay and arrival complaint rates trended upward.
+
+Data source:
+
+https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe
+Raw source file not committed here (230MB+); see link above to reproduce.
+
+Methodology note:
+
+Lifecycle stage tagging is keyword-based, not a trained sentiment model. A review
+is tagged to a stage if its text contains words associated with that stage (for
+example, "check-in" or "reception" tags a review to the Arrival stage). A single
+review can be tagged to more than one stage, since guests often mention several parts
+of their stay in one paragraph. This is a deliberate, transparent methodology choice,
+stated here rather than presented as a machine-learned classification.
+
+Booking.com's review form already separates guest feedback into a "positive" and
+"negative" box, that existing split was used directly rather than re-deriving
+sentiment polarity from scratch.
+
+
+Tools:
+
+Python (pandas) · SQLite · DB Browser for SQLite · Power BI (DAX, Power Query)
