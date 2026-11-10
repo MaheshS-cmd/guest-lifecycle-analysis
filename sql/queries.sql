@@ -1,5 +1,6 @@
 
- QUERY 1: Lifecycle Stage Impact
+-- -----------------------------------------------------------------
+-- QUERY 1: Lifecycle Stage Impact
 -- For each stage: how often guests praise it, how often they complain,
 -- and what the average score is in each case. The score gap shows
 -- which stage moves the needle most.
