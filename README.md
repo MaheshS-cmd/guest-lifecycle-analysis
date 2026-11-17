@@ -31,9 +31,9 @@ Most review analysis looks at one hotel at a time. Here all 1,492 hotels are tre
 
 Hotels are compared only if they have 100 or more reviews, so a handful of reviews can't swing a hotel's numbers. A hotel is "flagged" on a problem when its complaint rate is clearly above the group average for its number of reviews (more than two standard errors), not just a little higher.
 
-### 1. The hotel decides the experience, not the brand
+### 1. Most of the difference sits at property level, not with the brand
 
-Knowing a hotel's brand or city tells you very little about how its guests will feel. Brand explains between 1% and 9% of the differences between hotels in pre-arrival, arrival, staff and cleanliness complaints, and city explains between 1% and 6%. Almost all of the difference sits with the individual hotel.
+Knowing a hotel's brand or city tells you very little about its complaint levels. Brand explains between 1% and 9% of the differences between hotels in pre-arrival, arrival, staff and cleanliness complaints, and city explains between 1% and 6%. Most of the difference sits at property level. That doesn't mean all of it is down to how each hotel is run: building, location, guest mix and chance all sit at property level too.
 
 Inside one brand family of nearly 40 hotels, arrival complaints ranged from 4.6% to 15.6% of reviews. Every large brand family showed at least a twofold gap between its best and worst hotel.
 
@@ -41,7 +41,7 @@ Brand standards are written once, but they're delivered hotel by hotel, and the 
 
 ### 2. Front-of-house problems come as a bundle
 
-Hotels with many arrival complaints usually have many staff complaints too, and many pre-arrival complaints:
+Hotel by hotel, arrival, staff and pre-arrival complaints rise and fall together:
 
 | Hotel complaint rates | Correlation across hotels |
 |---|---|
@@ -52,7 +52,7 @@ Hotels with many arrival complaints usually have many staff complaints too, and 
 
 123 hotels (11% of those compared) are flagged on at least two of pre-arrival, arrival and staff complaints. They hold 21% of reviews but about 30% of the pre-arrival, arrival and staff complaints, and a third of the cleanliness complaints. Their average score is 7.8, against 8.65 for hotels with no flags.
 
-These hotels don't have three separate problems. They have one front-of-house operation that isn't working, from the booking confirmation to the welcome at the desk.
+Three symptoms, possibly one root cause somewhere between the booking confirmation and the welcome at the desk. The data shows they occur together; finding the cause is what the diagnosis stage of the plan is for.
 
 ### 3. Busy hotels struggle most at arrival
 
@@ -69,14 +69,14 @@ Each type of problem behaves differently across the group, so each needs a diffe
 
 | Problem | How it shows up across hotels | Who should own it | What to do |
 |---|---|---|---|
-| Pre-arrival, arrival, staff | Come together and cost the most score | Group operations and brand standards, with hotel GMs | One redesigned front-of-house process, piloted first |
+| Pre-arrival, arrival, staff | Occur together, in the lowest-scoring hotels | Group operations and brand standards, with hotel GMs | One redesigned front-of-house process, piloted first |
 | Cleanliness | Concentrated: the worst 10% of hotels produce 31% of cleanliness complaints | Regional operations and quality | Targeted housekeeping audits and recovery in those hotels |
 | Noise, heating and air-con | Stay in the same hotels year after year and barely relate to service | Asset management and owners | A capital spending list; manage room allocation and guest expectations in the meantime |
-| Food and beverage | Everywhere, but the worst 10% of hotels hold only 13% of these complaints, and they cost little score | Brand food and beverage | Review the product later; low priority |
+| Food and beverage | Widespread: the worst 10% of hotels hold only 13% of these complaints, and they have little impact on scores | Brand food and beverage | Review the product later; low priority |
 
 Noise is the stickiest problem in the data: 67% of the hotels in the worst quarter for noise in the first year were still there a year later. That points to buildings and locations, not to how the hotel is run.
 
-### 5. Weak hotels don't fix themselves
+### 5. The bottom tends to stay the bottom
 
 Comparing the first year of reviews (Aug 2015 – Jul 2016) with the second (Aug 2016 – Aug 2017) for the 767 hotels with 75+ reviews in both years:
 
@@ -88,11 +88,22 @@ Comparing the first year of reviews (Aug 2015 – Jul 2016) with the second (Aug
 | Cleanliness complaints | 60% | 15% |
 | Noise complaints | 67% | 10% |
 
-Without a deliberate programme, the hotels at the bottom stay at the bottom.
+Poor performance rarely corrected itself over the period. The data can't show what, if anything, these hotels tried, only that most of them stayed where they were.
 
 ### What fixing it could be worth
 
 If every hotel worse than the middle hotel were brought up to it, the group would have about 21% fewer arrival complaints, 22% fewer staff complaints, 23% fewer pre-arrival complaints and 42% fewer cleanliness complaints. That's a ceiling for planning, not a forecast.
+
+### How these figures were calculated
+
+- **Which hotels:** only hotels with 100+ reviews are compared (1,080 hotels, 95% of reviews). Each hotel's complaint rate is the share of its reviews that mention a stage or issue in the negative box.
+- **"Brand explains 4%":** the share of the variation in hotel complaint rates that sits between groups rather than within them (between-group sum of squares divided by total sum of squares). City uses all 1,080 hotels. Brand uses the 8 brand families with 15+ hotels (212 hotels), matched from hotel names. Part of the remaining variation is random noise from review counts (roughly 10–20%), so "property level" means everything specific to the hotel plus chance.
+- **Flagged hotels:** a hotel is flagged when its complaint rate is more than two standard errors above the group average for its number of reviews.
+- **Year on year:** year 1 is Aug 2015 – Jul 2016 and year 2 is Aug 2016 – Aug 2017. Hotels with 75+ reviews in both years (767) are split into quarters in each year separately, and the table shows how many of year 1's worst quarter were still in the worst quarter in year 2.
+- **Correlations:** Pearson correlation between hotels' complaint rates, one value per hotel.
+- **Guest volume:** each hotel's total Booking.com review count, used as a proxy for how many guests it handles.
+
+All of these are associations in review data. None of them proves what causes a hotel's complaints.
 
 ## The staged plan
 
@@ -101,7 +112,7 @@ Sending every hotel a new standard wouldn't work: the data says the standard isn
 | Stage | When | What happens | How we'd know it worked |
 |---|---|---|---|
 | 0. Baseline | Weeks 0–4 | Build one scorecard showing every hotel's complaint rate at each stage of the guest journey, refreshed weekly by the same tagging. Group hotels into tiers: Tier 1 is the 123 front-of-house hotels, Tier 2 the cleanliness outliers, Tier 3 the rest. Name an owner for each stage at group level and at each hotel. | Every hotel can see its own numbers every week, and every stage has an owner |
-| 1. Diagnose and design | Months 1–3 | Visit a sample of Tier 1 hotels and the best hotels of the same brand and city, and learn what the best already do. Map today's pre-arrival and arrival process, then design one future process: automated booking confirmation, a room-readiness promise, arrival staffing matched to forecast arrivals, online check-in for high-volume hotels, and a service-recovery script. | One process design and a training pack, tested with frontline teams |
+| 1. Diagnose and design | Months 1–3 | Visit a sample of Tier 1 hotels and the best hotels of the same brand and city, find what the best do differently, and adapt it. Map today's pre-arrival and arrival process, then design one future process: automated booking confirmation, a room-readiness promise, arrival staffing matched to forecast arrivals, online check-in for high-volume hotels, and a service-recovery script. | One process design and a training pack, tested with frontline teams |
 | 2. Pilot | Months 3–6 | Run the new process in 10–15 Tier 1 hotels across different cities, with similar hotels as a comparison group. Train Team Leads first and hold weekly huddles on the scorecard. | Arrival and staff complaints fall faster in pilot hotels than in the comparison group |
 | 3. Scale | Months 6–12 | Roll out in waves by region and build the process into brand standards and audits. In parallel, run housekeeping recovery in Tier 2 hotels and hand the noise and heating list to asset management. | Tier 1 hotels move towards the middle of the group |
 | 4. Sustain | Ongoing | Review the portfolio monthly, the way revenue is reviewed. Send an alert when a hotel crosses its threshold at any stage. | Gains hold for two quarters or more |
