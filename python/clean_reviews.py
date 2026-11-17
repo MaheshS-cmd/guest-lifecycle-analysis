@@ -192,7 +192,7 @@ df["score_band"] = pd.cut(
 
 keep_cols = [
     "Hotel_Name", "country", "review_date", "Reviewer_Nationality",
-    "Reviewer_Score", "Average_Score", "score_band",
+    "Reviewer_Score", "Average_Score", "Total_Number_of_Reviews", "score_band",
     "trip_type", "traveller_type", "nights_stayed", "stay_length_band",
     "mobile_submission", "days_since_review_num",
     "Review_Total_Negative_Word_Counts", "Review_Total_Positive_Word_Counts",
