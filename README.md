@@ -39,7 +39,7 @@ Inside one brand family of nearly 40 hotels, arrival complaints ranged from 4.6%
 
 Brand standards are written once, but they're delivered hotel by hotel, and the delivery is where the difference shows. The pattern holds when only hotels with 300+ reviews are compared: brand still explains no more than 14%.
 
-### 2. Front-of-house problems come as a bundle
+### 2. Front office problems come as a bundle
 
 Hotel by hotel, arrival, staff and pre-arrival complaints rise and fall together:
 
@@ -69,7 +69,7 @@ Each type of problem behaves differently across the group, so each needs a diffe
 
 | Problem | How it shows up across hotels | Who should own it | What to do |
 |---|---|---|---|
-| Pre-arrival, arrival, staff | Occur together, in the lowest-scoring hotels | Group operations and brand standards, with hotel GMs | One redesigned front-of-house process, piloted first |
+| Pre-arrival, arrival, staff | Occur together, in the lowest-scoring hotels | Group operations and brand standards, with hotel GMs | One redesigned front office process, piloted first |
 | Cleanliness | Concentrated: the worst 10% of hotels produce 31% of cleanliness complaints | Regional operations and quality | Targeted housekeeping audits and recovery in those hotels |
 | Noise, heating and air-con | Stay in the same hotels year after year and barely relate to service | Asset management and owners | A capital spending list; manage room allocation and guest expectations in the meantime |
 | Food and beverage | Widespread: the worst 10% of hotels hold only 13% of these complaints, and they have little impact on scores | Brand food and beverage | Review the product later; low priority |
@@ -111,7 +111,7 @@ Sending every hotel a new standard wouldn't work: the data says the standard isn
 
 | Stage | When | What happens | How we'd know it worked |
 |---|---|---|---|
-| 0. Baseline | Weeks 0–4 | Build one scorecard showing every hotel's complaint rate at each stage of the guest journey, refreshed weekly by the same tagging. Group hotels into tiers: Tier 1 is the 123 front-of-house hotels, Tier 2 the cleanliness outliers, Tier 3 the rest. Name an owner for each stage at group level and at each hotel. | Every hotel can see its own numbers every week, and every stage has an owner |
+| 0. Baseline | Weeks 0–4 | Build one scorecard showing every hotel's complaint rate at each stage of the guest journey, refreshed weekly by the same tagging. Group hotels into tiers: Tier 1 is the 123 front office hotels, Tier 2 the cleanliness outliers, Tier 3 the rest. Name an owner for each stage at group level and at each hotel. | Every hotel can see its own numbers every week, and every stage has an owner |
 | 1. Diagnose and design | Months 1–3 | Visit a sample of Tier 1 hotels and the best hotels of the same brand and city, find what the best do differently, and adapt it. Map today's pre-arrival and arrival process, then design one future process: automated booking confirmation, a room-readiness promise, arrival staffing matched to forecast arrivals, online check-in for high-volume hotels, and a service-recovery script. | One process design and a training pack, tested with frontline teams |
 | 2. Pilot | Months 3–6 | Run the new process in 10–15 Tier 1 hotels across different cities, with similar hotels as a comparison group. Train Team Leads first and hold weekly huddles on the scorecard. | Arrival and staff complaints fall faster in pilot hotels than in the comparison group |
 | 3. Scale | Months 6–12 | Roll out in waves by region and build the process into brand standards and audits. In parallel, run housekeeping recovery in Tier 2 hotels and hand the noise and heating list to asset management. | Tier 1 hotels move towards the middle of the group |

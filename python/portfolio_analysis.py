@@ -47,7 +47,7 @@ MEASURES = {
     "issue_climate": "Heating / air-con complaints",
     "issue_food_beverage": "Food and beverage complaints",
 }
-FRONT_OF_HOUSE = ["neg_pre_arrival", "neg_arrival", "issue_staff_service"]
+FRONT_OFFICE = ["neg_pre_arrival", "neg_arrival", "issue_staff_service"]
 
 
 def pct(x):
@@ -88,22 +88,22 @@ for m, label in MEASURES.items():
 print("\n2. PROBLEMS THAT TRAVEL TOGETHER (correlation of hotel complaint rates)")
 print(H[list(MEASURES)].corr().round(2).to_string())
 
-# 4. Front-of-house flags
+# 4. Front office flags
 for m in MEASURES:
     se = np.sqrt(portfolio[m] * (1 - portfolio[m]) / H["reviews"])
     H[f"flag_{m}"] = (H[m] > portfolio[m] + 2 * se).astype(int)
-H["front_of_house_flags"] = H[[f"flag_{m}" for m in FRONT_OF_HOUSE]].sum(axis=1)
-H["priority_front_of_house"] = (H["front_of_house_flags"] >= 2).astype(int)
+H["front_office_flags"] = H[[f"flag_{m}" for m in FRONT_OFFICE]].sum(axis=1)
+H["priority_front_office"] = (H["front_office_flags"] >= 2).astype(int)
 
-print("\n3. FRONT-OF-HOUSE FLAGS (pre-arrival, arrival, staff clearly above average)")
-print(H.groupby("front_of_house_flags").agg(hotels=("reviews", "size"),
+print("\n3. FRONT OFFICE FLAGS (pre-arrival, arrival, staff clearly above average)")
+print(H.groupby("front_office_flags").agg(hotels=("reviews", "size"),
                                               reviews=("reviews", "sum"),
                                               avg_score=("score", "mean")).round(2).to_string())
-P = H[H["priority_front_of_house"] == 1]
+P = H[H["priority_front_office"] == 1]
 print(f"  Flagged on 2+: {len(P)} hotels ({len(P) / len(H):.0%} of hotels, "
       f"{P['reviews'].sum() / H['reviews'].sum():.0%} of reviews), avg score {P['score'].mean():.2f} "
-      f"vs {H.loc[H['front_of_house_flags'] == 0, 'score'].mean():.2f} with no flags")
-for m in FRONT_OF_HOUSE + ["issue_cleanliness"]:
+      f"vs {H.loc[H['front_office_flags'] == 0, 'score'].mean():.2f} with no flags")
+for m in FRONT_OFFICE + ["issue_cleanliness"]:
     s = (P[m] * P["reviews"]).sum() / (H[m] * H["reviews"]).sum()
     print(f"    share of {MEASURES[m].lower()}: {s:.0%}")
 
