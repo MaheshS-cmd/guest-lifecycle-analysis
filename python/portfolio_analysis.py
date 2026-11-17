@@ -136,6 +136,18 @@ for m in ["score"] + list(MEASURES):
     print(f"  {label:30s} worst quarter in year 1 still worst in year 2: {stayed:.0%} | "
           f"reached the better half: {moved_up:.0%}")
 
+# 6b. Bottom-quarter hotels: the ones that climbed vs the ones that stayed
+bottom = both[pd.qcut(both["score"]["Y1"], 4, labels=False) == 0]
+climbed = pd.qcut(both["score"]["Y2"], 4, labels=False)[bottom.index] >= 1
+print(f"\n  Bottom quarter on score in year 1: {len(bottom)} hotels; climbed {climbed.sum()} "
+      f"({climbed.mean():.0%}), stayed {(~climbed).sum()}")
+print(f"  Starting score: climbed {bottom['score']['Y1'][climbed].mean():.2f}, stayed {bottom['score']['Y1'][~climbed].mean():.2f}")
+for m, label in MEASURES.items():
+    y1, y2 = bottom[m]["Y1"], bottom[m]["Y2"]
+    up = y2[climbed].mean() / y1[climbed].mean() - 1
+    stay = y2[~climbed].mean() / y1[~climbed].mean() - 1
+    print(f"  {label:30s} change: climbed {up:+.0%} | stayed {stay:+.0%}")
+
 # 7. How much do city and brand explain?
 def explained(frame, group, m):
     total = ((frame[m] - frame[m].mean()) ** 2).sum()

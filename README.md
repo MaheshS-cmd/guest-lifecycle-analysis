@@ -90,6 +90,17 @@ Comparing the first year of reviews (Aug 2015 – Jul 2016) with the second (Aug
 
 Poor performance rarely corrected itself over the period. The data can't show what, if anything, these hotels tried, only that most of them stayed where they were.
 
+The more useful question is what the hotels that climbed did differently. Of the 192 hotels in the bottom quarter on score in year 1, 45 (23%) moved up by year 2 and 147 (77%) stayed:
+
+| Change from year 1 to year 2 | Hotels that climbed (45) | Hotels that stayed (147) |
+|---|---|---|
+| Arrival complaints | 14% lower | 10% higher |
+| Staff complaints | 17% lower | 11% higher |
+| Cleanliness complaints | 11% lower | 16% higher |
+| Noise complaints | 2% lower | 1% higher |
+
+The hotels that climbed improved on things a hotel team controls, while noise barely moved for either group. The hotels that stayed also started with more noise, heating and cleanliness complaints. That fits a split between operational problems (people, process, how change is managed) and building problems that need capital spending, but it's a pattern, not proof. The climbers also started from a slightly better score (7.93 against 7.59), so some of their gain may be ordinary bounce-back. Finding out why the 77% stayed stuck is what the diagnosis stage of the plan is for.
+
 ### What fixing it could be worth
 
 If every hotel worse than the middle hotel were brought up to it, the group would have about 21% fewer arrival complaints, 22% fewer staff complaints, 23% fewer pre-arrival complaints and 42% fewer cleanliness complaints. That's a ceiling for planning, not a forecast.
@@ -99,7 +110,7 @@ If every hotel worse than the middle hotel were brought up to it, the group woul
 - **Which hotels:** only hotels with 100+ reviews are compared (1,080 hotels, 95% of reviews). Each hotel's complaint rate is the share of its reviews that mention a stage or issue in the negative box.
 - **"Brand explains 4%":** the share of the variation in hotel complaint rates that sits between groups rather than within them (between-group sum of squares divided by total sum of squares). City uses all 1,080 hotels. Brand uses the 8 brand families with 15+ hotels (212 hotels), matched from hotel names. Part of the remaining variation is random noise from review counts (roughly 10–20%), so "property level" means everything specific to the hotel plus chance.
 - **Flagged hotels:** a hotel is flagged when its complaint rate is more than two standard errors above the group average for its number of reviews.
-- **Year on year:** year 1 is Aug 2015 – Jul 2016 and year 2 is Aug 2016 – Aug 2017. Hotels with 75+ reviews in both years (767) are split into quarters in each year separately, and the table shows how many of year 1's worst quarter were still in the worst quarter in year 2.
+- **Year on year:** year 1 is Aug 2015 – Jul 2016 and year 2 is Aug 2016 – Aug 2017. Hotels with 75+ reviews in both years (767) are split into quarters in each year separately, and the table shows how many of year 1's worst quarter were still in the worst quarter in year 2. "Climbed" means a hotel in year 1's bottom quarter on score was in a higher quarter in year 2; changes in complaint rates compare each group's average rate in the two years.
 - **Correlations:** Pearson correlation between hotels' complaint rates, one value per hotel.
 - **Guest volume:** each hotel's total Booking.com review count, used as a proxy for how many guests it handles.
 
